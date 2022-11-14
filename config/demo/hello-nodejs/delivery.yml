@@ -24,7 +24,7 @@ spec:
         carto.run/workload-name: hello-nodejs
     spec:
       containers:
-      - image: harbor199.vcfdemo.com/jptap180-tapfull/supply-chain/hello-nodejs-demo@sha256:a3a87e123c3386a88f347fd2e9eb5a69803b9d5c4b73ee4d4376ddc6f1d14ff5
+      - image: harbor199.vcfdemo.com/jptap180-tapfull/supply-chain/hello-nodejs-demo@sha256:886ff346cc0c5fc05b5392988f286c74857b6ff941ea045c845dd82ab770ae88
         name: workload
         resources: {}
         securityContext:
