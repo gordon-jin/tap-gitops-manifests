@@ -24,7 +24,7 @@ spec:
         carto.run/workload-name: hello
     spec:
       containers:
-      - image: harbor199.vcfdemo.com/jptap180-tapfull/supply-chain/hello-demo@sha256:2b9b891cba86119b3907e70910997d467145c0aeab5885d79feb062f96236be6
+      - image: harbor199.vcfdemo.com/jptap180-tapfull/supply-chain/hello-demo@sha256:b92f00f1742dc43d44872f2b703ce7a5aad87f450d131debb557f7332dd252a3
         name: workload
         resources: {}
         securityContext:
