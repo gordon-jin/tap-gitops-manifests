@@ -1,0 +1,21 @@
+apiVersion: carto.run/v1alpha1
+kind: Deliverable
+metadata:
+  creationTimestamp: "2022-11-22T10:43:01Z"
+  generation: 1
+  labels:
+    app.kubernetes.io/component: deliverable
+    app.kubernetes.io/part-of: tanzu-java-web-app
+    app.tanzu.vmware.com/deliverable-type: web
+    apps.tanzu.vmware.com/workload-type: web
+    carto.run/cluster-template-name: deliverable-template
+    carto.run/resource-name: deliverable
+    carto.run/supply-chain-name: source-to-url
+    carto.run/template-kind: ClusterTemplate
+    carto.run/workload-name: tanzu-java-web-app
+    carto.run/workload-namespace: demo
+  name: tanzu-java-web-app
+  namespace: demo
+spec:
+  source:
+    image: harbor199.vcfdemo.com/jptap180-tapfull/supply-chain/tanzu-java-web-app-demo-bundle:befc86b5-2d79-42bf-a0b0-b13ab42184e3
