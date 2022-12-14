@@ -7,6 +7,7 @@ metadata:
     ootb.apps.tanzu.vmware.com/apidescriptor-ref: "true"
   labels:
     app.kubernetes.io/part-of: hello
+    apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/component: run
     carto.run/workload-name: hello
@@ -20,11 +21,12 @@ spec:
       labels:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: hello
+        apps.tanzu.vmware.com/has-tests: "true"
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: hello
     spec:
       containers:
-      - image: harbor199.vcfdemo.com/jptap180-tapfull/supply-chain/hello-demo@sha256:8aa0575c78740bce4bc542885f532c655238f948207e5f3e7a2da60078d00833
+      - image: harbor.shared.dev.jra.vcfdemo.com/jptap180-tapfull/supply-chain/hello-demo@sha256:f8fece01721a2c206ae77c2a3b768646ee54465ffca20473ad744ab65f732148
         name: workload
         resources: {}
         securityContext:
