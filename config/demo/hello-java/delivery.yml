@@ -44,7 +44,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: harbor.shared.dev.jra.vcfdemo.com/jptap180-tapfull/supply-chain/hello-java-demo@sha256:27d4c9703f7d98898c47b79ae728570343c711220914ee5cae5e2c98614c97fe
+        image: harbor.shared.dev.jra.vcfdemo.com/jptap180-tapfull/supply-chain/hello-java-demo@sha256:a01868a4c66d7a65642b9d1c319d738237f75a66421291daab6683eb61839bd5
         livenessProbe:
           httpGet:
             path: /livez
